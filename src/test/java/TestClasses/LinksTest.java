@@ -3,6 +3,7 @@ package TestClasses;
 import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.Test;
 
@@ -16,7 +17,7 @@ public class LinksTest {
 	@Test
 	 public void verifyBrokenLinks() throws IOException
 	 {
-		DriverFactory.setDriver(new EdgeDriver());
+		DriverFactory.setDriver(new ChromeDriver(DriverFactory.browserConfig()));
 		driver=DriverFactory.getDriver();
 		driver.get("https://demoqa.com/broken");
 		new ReusuableMethods().waitForPageLoad();
