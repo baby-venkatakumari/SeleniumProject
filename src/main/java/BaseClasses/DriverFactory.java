@@ -38,6 +38,7 @@ public class DriverFactory {
 		HashMap<String, String> prefs = new HashMap<>();
 		prefs.put("download.default_directory", System.getProperty("user.dir"));
 		options.setExperimentalOption("prefs", prefs);
+		options.addArguments("--headless");
 		return options;
 	}
 
