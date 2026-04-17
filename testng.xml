@@ -2,10 +2,9 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
+      <class name="TestClasses.TestNG03_01_Test"/>
+      <class name="TestClasses.LinksTest"/>
       <class name="TestClasses.FailedRerun"/>
     </classes>
   </test> <!-- Test -->
-  <listeners>
-  	<listener class-name = "BaseClasses.MyListener"></listener>
-  </listeners>
 </suite> <!-- Suite -->
