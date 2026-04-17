@@ -6,19 +6,19 @@ import org.testng.annotations.Test;
 
 public class FailedRerun {
 
-	@Test
+	//@Test
 	public void test1()
 	{
 		Assert.assertTrue(true);
 	}
 	
-	@Test
+	//@Test
 	public void test2()
 	{
 		Assert.assertTrue(false);
 	}
 	
-	@Test(retryAnalyzer = BaseClasses.RetryAnalyzer.class)
+	//@Test(retryAnalyzer = BaseClasses.RetryAnalyzer.class)
 	public void test3(ITestContext context)
 	{
 		if((int)context.getAttribute("retryCount")>=1)

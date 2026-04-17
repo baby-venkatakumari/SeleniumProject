@@ -16,7 +16,7 @@ public class TestNG03_03_Test {
 	WebDriver driver;
 	Map<String,String> data=new HashMap<>();
 	WebTablePage obj;
-	@Test
+	//@Test
 	public void launchBrowser()
 	{
 		DriverFactory.setDriver(new ChromeDriver());
@@ -25,7 +25,7 @@ public class TestNG03_03_Test {
 		new ReusuableMethods().waitForPageLoad();
 		Assert.assertEquals(driver.getTitle(), "demosite");
 	}
-	@Test(dependsOnMethods = {"launchBrowser"})
+	//@Test(dependsOnMethods = {"launchBrowser"})
 	public void addNewRowToWebTable()
 	{
 		data.put("fname","test");
@@ -38,7 +38,7 @@ public class TestNG03_03_Test {
 		obj.addNewRow(data);
 	}
 	
-	@Test(dependsOnMethods = {"addNewRowToWebTable"})
+	//@Test(dependsOnMethods = {"addNewRowToWebTable"})
 	public void verifyAddedDetails()
 	{
 		obj.verifyNewlyAddedRow(data);

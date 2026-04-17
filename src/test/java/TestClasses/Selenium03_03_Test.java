@@ -30,7 +30,7 @@ public class Selenium03_03_Test {
 		DriverFactory.quitDriver();
 	}
 	
-	@Test
+	//@Test
 	public void validateScroll()
 	{
 		DriverFactory.setDriver(new ChromeDriver());

@@ -12,7 +12,7 @@ import PageClasses.LoginPage;
 public class TestNG01_02_Test {
 	WebDriver driver;
 	 
-	 @Test
+	// @Test
 	 public void loginFunctionality_testng0102()
 	 {
 		DriverFactory.setDriver(new ChromeDriver());

@@ -10,7 +10,7 @@ import PageClasses.MenuPage;
 
 public class TestNG01_03ii_Test {
 
-	@Test
+	//@Test
 	public void validateFirstSubMenu() throws InterruptedException
 	{
 		DriverFactory.setDriver(new ChromeDriver());

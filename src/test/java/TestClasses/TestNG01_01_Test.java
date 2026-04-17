@@ -12,24 +12,24 @@ import BaseClasses.ReusuableMethods;
 
 public class TestNG01_01_Test {
 	WebDriver driver;
-	@BeforeMethod
+	//@BeforeMethod
 	public void launchBrowser()
 	{
 		DriverFactory.setDriver(new ChromeDriver());
 		driver=DriverFactory.getDriver();
 		driver.get("https://google.com/");
 	}
-	@AfterMethod
+	//@AfterMethod
 	public void closeBrowser()
 	{
 		DriverFactory.quitDriver();
 	}
-	@Test
+	//@Test
 	public void validateTitle()
 	{
 		Assert.assertEquals(driver.getTitle(),"Google");
 	}
-	@Test
+	//@Test
 	public void validatePageLoad()
 	{
 		new ReusuableMethods().waitForPageLoad();

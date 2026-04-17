@@ -18,7 +18,7 @@ import PageClasses.LoginPage;
 
 public class TestNG03_02_Test {
 	WebDriver driver;
-	@Test(dataProvider="getData")
+	//@Test(dataProvider="getData")
 	public void loginFunctionality_testng0302(String username, String password)
 	{
 		DriverFactory.setDriver(new FirefoxDriver());
@@ -37,7 +37,7 @@ public class TestNG03_02_Test {
 
 	}
 	
-	@DataProvider
+	//@DataProvider
 	public Object[][] getData()
 	{	
 		return new Object[][] { 

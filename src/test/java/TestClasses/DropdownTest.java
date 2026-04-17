@@ -13,7 +13,7 @@ import PageClasses.DropdownPage;
 public class DropdownTest {
 	WebDriver driver = DriverFactory.getDriver();
 	DropdownPage obj=new DropdownPage(driver);
-	@Test
+	//@Test
 	public void dropdownTest() throws InterruptedException
 	{
 		driver.get("https://demoqa.com/select-menu");

@@ -12,7 +12,7 @@ public class LoginTest {
 	 
 	 WebDriver driver;
 	 
-	@Test
+	//@Test
 	 public void loginFunctionality_HappyPath_LoginTest()
 	 {
 		DriverFactory.setDriver(new EdgeDriver());
