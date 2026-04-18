@@ -5,7 +5,4 @@
       <class name="TestClasses.LinksTest"/>
     </classes>
   </test> <!-- Test -->
-  <listeners>
-    <listener class-name="org.testng.reporters.XMLReporter"/>
-</listeners>
 </suite> <!-- Suite -->
